@@ -638,6 +638,11 @@ public class AddressBook {
         return getMessageForPersonsDisplayedSummary(displayedPersons);
     }
     
+    /**
+     * Displays all persons in the address book to the user; in sorted alphabetical order.
+     *
+     * @return feedback display message for the operation result
+     */
     private static String executeListAllPersonsInAddressBookSorted() {
     	ArrayList<Person> toBeDisplayed = new ArrayList<Person>(getAllPersonsInAddressBook());
     	Collections.sort(toBeDisplayed, new Comparator<Person>() {
